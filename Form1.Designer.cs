@@ -28,12 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.tbxMonth = new System.Windows.Forms.TextBox();
+            this.btnJudge = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(83, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(17, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "月";
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(29, 81);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(13, 12);
+            this.lblResult.TabIndex = 1;
+            this.lblResult.Text = "　";
+            // 
+            // tbxMonth
+            // 
+            this.tbxMonth.Location = new System.Drawing.Point(12, 31);
+            this.tbxMonth.Name = "tbxMonth";
+            this.tbxMonth.Size = new System.Drawing.Size(65, 19);
+            this.tbxMonth.TabIndex = 2;
+            // 
+            // btnJudge
+            // 
+            this.btnJudge.Location = new System.Drawing.Point(120, 29);
+            this.btnJudge.Name = "btnJudge";
+            this.btnJudge.Size = new System.Drawing.Size(75, 23);
+            this.btnJudge.TabIndex = 3;
+            this.btnJudge.Text = "判定";
+            this.btnJudge.UseVisualStyleBackColor = true;
+            this.btnJudge.Click += new System.EventHandler(this.btnJudge_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(248, 119);
+            this.Controls.Add(this.btnJudge);
+            this.Controls.Add(this.tbxMonth);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.label1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.TextBox tbxMonth;
+        private System.Windows.Forms.Button btnJudge;
     }
 }
 
